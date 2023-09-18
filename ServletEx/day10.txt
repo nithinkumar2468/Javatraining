@@ -1,0 +1,12 @@
+1)Check your web.xml file for syntax issues and servlet names and url patterns are matching.
+2)Metadata is case sensitive.
+3)Format your code or web.xml when needed.
+4)If more no of apps are deployed to server,better to clean your tomcat directories more frequently.
+5)Stop your server before you shutdown your machine.
+port conflict issues.
+6)Check all your servlets and jsp metadata properly in code and web.xml.
+7)Always Servlets shld be resided in packages.Dont use default packages.
+8)Html and jsp file shld reside in Webcontent folder or
+create a folder in webcontent and place your files there.We always developers to create folders separetly
+for html,css,js,jsp,image and fonts.
+9)Even after performing above steps,if you are still facing issues,pls restart your IDE.
