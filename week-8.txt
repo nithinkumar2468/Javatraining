@@ -1,0 +1,277 @@
+Week-8
+---------------------------------------
+STS:
+Spring Tool Suite  --Version 4
+build on eclipse
+Mainly used for deveops,Spring boot apk,microservices,cloud apk.
+
+Groovy --Competitor of java
+Mainly for pipeline creation.
+Server side configuration.
+
+To clean install:
+Go to cmd then to switch workspace 
+   d:
+   
+then enter cd location from properties location,then click enter.
+
+mvnw clean install
+
+clean install :
+download the dependencies and 
+packaging occurs either ear or war.
+
+To run the project
+first clean install
+in same terminal type
+java -jar type S and then click tab then put.war at end and press enter
+
+I want to increase heapsize of jvm at runtime
+I want to add parameters or values of jvm in runtime
+
+then use -D before jar.
+
+
+YAML config file:
+properties file are only supported by java.
+But yaml is universal accepted by other languages.
+Yaml supports collections whereas properties only support key,value pairs.
+
+Indentation must follow in yaml
+
+To create a project by cmd
+spring init --build=maven --java-version=8 --dependencies=web --packaging=war sample-app.zip
+
+
+spring init --dependencies=web
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Micro Services
+------------------------------------------
+Is way to designn web apks which is lossely  coupled.      
+Prerequisites : web services
+                swagger
+				deveops tools
+				
+ Web Services:
+  Running/Deployment------Docker,Kubernates,Openshift
+Code Quality testing-------SonarQube,PMD,COCO
+Databases------RDBMS db or No SQL dbs
+Logging---------Loggly,AWS log feature,ELK Stack,Splunk,Sentry server
+Monitoring----New Relic/Appdynamics
+Cloud---AWS/Heroku/Azure/GCP/Alibaba/PCF
+Code repository----Git/Github/bitbucket/Gitlab/AWS
+Testing  Tool----Junit/TestNG
+CI/CD tool----Jenkins/Teamcity
+Issue Tracking--Jira/Service Now
+Dependency Management----Maven,Gradle
+Global Dashboards----SpringBoot Admin Dashboard
+Lookup Server----Eureka/PCF/Netflix 3rd party servers
+Corporate/Artifactory repository----JFROG/Sonatype nexus
+REST Documentation----Swagger
+API designing-----Swagger/Open API,Mulesoft RAML
+Integrations----Apache Camel/Mulesoft/Tibco ESB/Jboss ESB
+Browser Compatability Testing----Selenium
+Load/DB/Webservice Testing---Jmeter
+Technologies---SpringBoot,Spring Cloud
+
+
+
+ java is platfrom independent,but it is language dependen.
+
+
+interopeaility:
+ability of systrm or softaete
+
+@Rest  --new approach
+--it supports http,https protocols.
+--moderate security.
+--OAKTA framework,SSo technique like Json,0auth1.0,0auth2.x,kerberos,LDAP Authentication.
+
+
+
+@Soap (Simple object access protocol) --older approach
+---slow because of xml approach
+---soap gives you tight security.
+--it supports http,ftp.
+Two design any mivroservi
+
+
+Producer --Generate the data
+Consumer-- read/fetch the data from producer using http/https.
+
+Consumer should know the endpoint URL.
+
+We make API calls using url.--https protocol.
+
+An Api is a code snippet or program with set of rules and regulations for transferring the data between 2 parties.
+
+WSDL--SOAP services
+Web service in java
+JAX_RS,resteasy,saml,spring,springboot
+
+jax-ws---soap
+
+
+user enable:
+Runnnsdeplaomwnr-docker,
+Technical
+---------------------------------------------------------------------------
+Synchronous Communication:
+If a service calls an API using protocol http and the caller waits for a response from the receiver.
+
+Asynchronous Communication:
+If a service sends a message without waiting for a response,and one or more services process the message asynchronously. 
+
+-------------------------------
+Cache memory:
+Temporary memory(RAM).
+To improve performance.
+TYpes:
+1)In memory caching
+Widely used.RAM.Memcached and Redis.
+
+2)Database Caching:
+cache in db.
+Hibernate first level cache.
+
+3)Web server caching:
+Stores the data for reuse.
+
+4)CDN Caching:
+Content delivery network.
+Replicate the common requested files across caching servers.
+
+Spring boot caching:
+Springboot provides cache Abstraction API that allow us to use diff cache providers to cache objects.
+
+
+If there is only 5 features
+Then go with monolithic architecture.
+--If one service fails it will collapse the entire service.
+
+
+If there are many features and in future it may increase then go with microservices.
+Drawbacks:
+Maintainance,Infrastructure cost is high.
+More tools need to known
+Man power is high.
+
+For every microservice,we have independent db.
+Db per service design pattern.
+Db per shared microservice--design pattern
+Circuit breaker design pattern?
+
+Microservices:
+It is a way/Architecture to design/
+To achieve loose coupling components.
+Technology used: SpringBoot
+Architecture: Microservices architecture.
+
+Types of Microservices
+>>Greenfield microservices:
+  Services that we create from scratch
+>>Brownfield microservices:
+  Services that we extend.
+>>12 factor rules and regulations
+>>Follow design patterns
+>>How do u handle transaction in microservices.
+>>How do you aggregate logs from multiple microservices.
+>>Do we have Admin dashboard to monitor all microservices in project?
+
+
+To run microservices we need server
+but in place of server we use VM(Virtual machines) but it is heavy weight(Takes more time to load,consume more resources).
+So we use Container which is light weight.
+
+
+API gateway-to security(Netflix API gateway,Pivotal cloud foundry)
+      |
+Both collaborates each other
+      |
+Service discovery-(Eureka,Mulesoft)
+have information about all the microservices.(Collection)
+
+Blue-Green deployment design pattern:
+If one service is not running then mapping should be done to replica Ip address.
+Implement in cloud.
+
+Red-Green deployment design pattern:
+
+To know whether microservices is up or not -- Actuator.
+
+To know whether your databse is in consistent state or not --App dynamics,pcf
+It will monitor the db,servers,apk's.
+
+To communicate one microserice to another through RPC,RMI,Http services.
+
+
+Publisher-push a message to Queue
+Receiver-pull the msg from that queue
+
+Event Deligation Mechanism.
+
+
+CORS:
+Cross origin resource sharing.
+Enabled at server side.
+Comes under security layer.
+
+
+--load balancer is a software
+
+Cucumber tool-bdd-behaviour driven development(given,when,then)
+
+Composite microservice:
+one output of microservice is taken as an input to another microservice.
+
+
+
+
+
+
+
+
+HTML-5
+----------------------------------
+Hypertext markup language
+html5.x version
+latest browser-chrome,updated browser-chrome
+To design static web pages.
+>>Using pure html--we can't create full fledged web apk.we need to integrate javascript.
+>>Browser can understan dhtml language
+>>Uses http/https protocols.
+>>To plain web pages.
+>>CSS3.0 used to beautify the pages.
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
